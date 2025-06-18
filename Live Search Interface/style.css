@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    font-size: 17px; /* slightly bigger font globally */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* aligns top-center */
+    padding-top: 60px; /* top margin */
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#searchInput {
+    padding: 15px 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+#searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 5px #a2d2ff;
+}
+
+.userContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.userContainer .userItem {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.userContainer .userItem:hover {
+    transform: scale(1.01);
+    background-color: #f5f5f5;
+}
+
+.userContainer .userItem img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
