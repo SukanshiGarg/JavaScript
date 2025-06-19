@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+.smallCursor{
+    width:15px ;
+    height:15px;
+    background-color:red;
+    border-radius:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    transform: translate(-50% , -50%);
+}
+
+
+.shadowCursor{
+    width:70px;
+    height:70px;
+    background-color:red;
+    border-radius:100%;
+    filter:blur(35px);
+    position:absolute; 
+    left:0px;
+    top:0px;
+    transform: translate(-50% , -50%);
+}
+
+.shadowCursor {
+    transition: left 0.1s ease-out, top 0.1s ease-out;
+}
